@@ -1,0 +1,39 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    height: 50px;
+    background-color: rgb(236, 234, 233);
+    align-items: center;
+    margin-top: 0;
+    padding: 0 100px 0 100px;
+    flex-basis: 40%;
+    
+}
+
+li{
+    list-style: none;
+    padding: 0 15px 0 15px;
+    border-right: solid 1px black;
+    
+}
+li::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: black;
+    display: block;
+    transition: all 1s;
+}
+li:hover{
+    cursor: pointer;
+}
+li:hover::after{     
+    
+    width: 40px;
+   
+   
+}
