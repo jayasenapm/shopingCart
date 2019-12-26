@@ -33,7 +33,64 @@ li:hover{
 }
 li:hover::after{     
     
-    width: 40px;
-   
-   
+    width: 40px;  
+}
+
+/*banner start from here*/
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/05/00/12/people-2581913_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+/*shoping part */
+
+.shopingpart{
+    widows: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.shopbox{
+    width: 25%;
+    padding: 10px;
+    box-shadow: 10px 10px 10px 10px #aaaaaa;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.shopbox img{
+    width: 100%;
+}
+.shopbox span{
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.349);
+    position: absolute;
+    overflow-y: hidden;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+.shopbox:hover span{
+    height: 100%;
+    cursor: pointer;
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: coral;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    transition: all 1s;
+}
+button:hover{
+    background-color: darkgoldenrod;
 }
