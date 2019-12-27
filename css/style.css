@@ -111,21 +111,39 @@ html,body{
 /*shoping part */
 
 .shopingpart{
-    widows: 90%;
+    widows: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.shopingpart h1{
-    flex-basis: 100%;
-    text-align: center;
+.sherchbox{
+    flex-basis: 15%;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(236, 233, 233);
+    padding: 20px 10px 20px 10px;
+}
+.container{
+    padding: 10px 10px 10px 10px;
+}
+.container input{
+    cursor: pointer;
+}
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+.shop{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 80%;
+    justify-content: space-evenly;
     
 }
+
 .shopbox{
-    flex-basis: 15%;
+    flex-basis: 20%;
     padding: 5px;
     box-shadow: 10px 10px 10px 10px #aaaaaa;
     position: relative;
